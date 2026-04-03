@@ -3,8 +3,8 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: 'inventario',
-    title: 'Inventario',
     loadComponent: () => import('./inventario/inventario'),
+    loadChildren: () => import('./inventario/inventario.routes'),
   },
   {
     path: '**',
